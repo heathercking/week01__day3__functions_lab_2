@@ -5,3 +5,25 @@ tasks = [
     { "description": "Feed Cat", "completed": False, "time_taken": 5 },
     { "description": "Walk Dog", "completed": True, "time_taken": 60 },
 ]
+
+#task 1
+task_list = []
+index = 0
+
+for task in tasks:
+    if tasks[index]["completed"] == False:
+        task_list.append(tasks[index]["description"])
+    index += 1
+    
+print(task_list)
+
+#task 2
+task_list = []
+index = 0
+
+for task in tasks:
+    if tasks[index]["completed"] == True:
+        task_list.append(tasks[index]["description"])
+    index += 1
+    
+print(task_list)
